@@ -36,25 +36,66 @@ The application consist of endpoints and each carry out a specific task. Set the
     }
 
 - **GET -** /api/users/{user} : Gets a single user
-- **PUT -** /api/users/{user} : Updates a user
+- **PUT -** /api/users/{user} : Updates a user 
+
+    body:{
+        name, 
+        email, 
+        password, 
+        password_confirmation
+    }
+
 - **DELETE -** /api/users/{user} : Soft deletes a user and its related record.
 - **POST -** /api/users/{user}/subscribe : Subscribes a user to a website
-- **POST -** /api/users/{user}/unsubscribe : Unsubscribes a user from a website
+
+    body:{
+        websites
+    }
+
+- **POST -** /api/users/{user}/unsubscribe : Unsubscribes a user from a website 
+
+    body:{
+        websites
+    }
 
 #### Websites Endpoints
 
 - **GET -** /api/websites : Gets a paginated list of websites
+
+    body:{
+        name, 
+        url,
+    }
+
 - **POST -** /api/websites : Creates a new website
 - **GET -** /api/websites/{website} : Gets a single website
 - **PUT -** /api/websites/{website} : Updates a website
+
+    body:{
+        name, 
+        url,
+    }
+
 - **DELETE -** /api/websites/{website} : Soft deletes a website and its related posts.
 
 #### Posts Endpoints
 
 - **GET -** /api/posts : Gets a paginated list of posts
 - **POST -** /api/posts : Creates a new post
+
+    body:{
+        website_id,
+        title,
+        body,
+    }
 - **GET -** /api/posts/{post} : Gets a single post
 - **PUT -** /api/posts/{post} : Updates a post
+
+    body:{
+        title,
+        body,
+    }
+    
 - **DELETE -** /api/posts/{post} : Soft deletes a post.
 
 
