@@ -27,6 +27,7 @@ The application consist of endpoints and each carry out a specific task. Set the
 
 - **GET -** /api/users : Gets a paginated list of users
 - **POST -** /api/users : Creates a new user
+    body:{name, email, password, password_confirmation}
 - **GET -** /api/users/{user} : Gets a single user
 - **PUT -** /api/users/{user} : Updates a user
 - **DELETE -** /api/users/{user} : Soft deletes a user and its related record.
