@@ -142,13 +142,13 @@ The application consist of endpoints and each carry out a specific task. Set the
 
 
 ## HTTP Response Structure
-    ```
+    
     {
         message:'',
         data: {},
         errors: {},
     }
-    ```
+    
 ## Credits
 
 If you like what you see, please send an e-mail to Paulinus Perekpo Emmanuel via [perekpopaulinus@gmail.com](mailto:perekpopaulinus@gmail.com).
