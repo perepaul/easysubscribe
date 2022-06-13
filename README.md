@@ -2,14 +2,22 @@
 
 A newsletter subscription application where users can subscribe to a website to receive updates (email) on new posts.
 
+
+## Requireents
+
+1. PHP ^7.3 || 8.0.
+2. Composer ^2.0
+3. 
+
 ## Installation
 
 1. clone this repository. run: git clone https://github.com/perepaul/easysubscribe.git on your terminal
-2. run: _cd easysubscribe_ on your terminal and press enter
-3. run: _cp .env.example .env_ on your terminal and press enter
-4. run: _php artisan key:generate_
-5. set your database credentials. ie. database host, port, user and password.
-5. run: _php artisan migrate_ on your terminal
+2. run: **cd easysubscribe** // on your terminal
+3. run: **composer install** // on your terminal to install the dependencies.
+3. run: **cp .env.example .env** // on your terminal
+4. run: **php artisan key:generate**
+5. set your database credentials in the env file. ie. database host, port, user and password.
+5. run: **php artisan migrate** on your terminal to generate the database tables.
 
 ## Laravel Sponsors
 
