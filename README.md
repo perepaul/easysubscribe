@@ -149,12 +149,11 @@ The application consist of endpoints and each carry out a specific task. Set the
         data: {},
         errors: {},
     }
-
     ```
 
-## Security Vulnerabilities
+## Credits
 
-If you discover a security vulnerability within Easysubscribe, please send an e-mail to Paulinus Perekpo Emmanuel via [perekpopaulinus@gmail.com](mailto:perekpopaulinus@gmail.com).
+If you like what you see, please send an e-mail to Paulinus Perekpo Emmanuel via [perekpopaulinus@gmail.com](mailto:perekpopaulinus@gmail.com).
 
 ## License
 
