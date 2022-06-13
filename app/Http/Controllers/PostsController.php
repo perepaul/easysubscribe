@@ -79,7 +79,6 @@ class PostsController extends Controller
     public function update(Request $request, Post $post)
     {
         $valid = $request->validate([
-            'website_id' => ['required', 'exists:websites,id'],
             'title' => ['required', 'unique:posts,title,' . $post->id],
             'body' => ['required']
         ]);

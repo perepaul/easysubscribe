@@ -95,11 +95,11 @@ The application consist of endpoints and each carry out a specific task. Set the
         title,
         body,
     }
-    
+
 - **DELETE -** /api/posts/{post} : Soft deletes a post.
 
 
-### HTTP Responses
+### HTTP Responses Structure
 
 - **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
