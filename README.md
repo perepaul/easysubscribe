@@ -7,21 +7,30 @@ A newsletter subscription application where users can subscribe to a website to 
 
 1. PHP ^7.3 || 8.0.
 2. Composer ^2.0
-3. 
+3. And off course the knowledge of servers.
 
 ## Installation
 
 1. clone this repository. run: git clone https://github.com/perepaul/easysubscribe.git on your terminal
 2. run: **cd easysubscribe** // on your terminal
 3. run: **composer install** // on your terminal to install the dependencies.
-3. run: **cp .env.example .env** // on your terminal
-4. run: **php artisan key:generate**
-5. set your database credentials in the env file. ie. database host, port, user and password.
-5. run: **php artisan migrate** on your terminal to generate the database tables.
+4. run: **cp .env.example .env** // on your terminal
+5. run: **php artisan key:generate**
+6. set your database credentials in the env file. ie. database host, port, user and password.
+7. run: **php artisan migrate** on your terminal to generate the database tables.
 
-## Laravel Sponsors
+## Endpoints
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+The application consist of endpoints and each carry out a specific task. Set the http Accept header to 'application/json'.
+
+### User Endpoints
+
+- **GET -** /api/users : Gets a paginated list of users
+- **POST -** /api/users : Creates a new user
+- **GET -** /api/users/{user} : Gets a single user
+- **PUT -** /api/users/{user} : Updates a single user
+- **DELETE -** /api/users/{user} : Soft deletes a user and its related record.
+
 
 ### Premium Partners
 
