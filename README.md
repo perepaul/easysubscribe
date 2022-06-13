@@ -29,9 +29,12 @@ The application consist of endpoints and each carry out a specific task. Set the
 - **POST -** /api/users : Creates a new user 
 
     body:{
-        name, 
+        name,  
+
         email, 
+
         password, 
+        
         password_confirmation
     }
 
@@ -39,9 +42,12 @@ The application consist of endpoints and each carry out a specific task. Set the
 - **PUT -** /api/users/{user} : Updates a user 
 
     body:{
-        name, 
-        email, 
-        password, 
+        name,  
+
+        email,  
+
+        password,  
+
         password_confirmation
     }
 
@@ -63,7 +69,8 @@ The application consist of endpoints and each carry out a specific task. Set the
 - **GET -** /api/websites : Gets a paginated list of websites
 
     body:{
-        name, 
+        name,  
+
         url,
     }
 
@@ -72,7 +79,8 @@ The application consist of endpoints and each carry out a specific task. Set the
 - **PUT -** /api/websites/{website} : Updates a website
 
     body:{
-        name, 
+        name,  
+
         url,
     }
 
@@ -84,16 +92,19 @@ The application consist of endpoints and each carry out a specific task. Set the
 - **POST -** /api/posts : Creates a new post
 
     body:{
-        website_id,
-        title,
+        website_id, 
+
+        title, 
+
         body,
     }
 - **GET -** /api/posts/{post} : Gets a single post
 - **PUT -** /api/posts/{post} : Updates a post
 
     body:{
-        title,
-        body,
+        title, 
+
+        body, 
     }
 
 - **DELETE -** /api/posts/{post} : Soft deletes a post.
