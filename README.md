@@ -23,7 +23,7 @@ A newsletter subscription application where users can subscribe to a website to 
 
 The application consist of endpoints and each carry out a specific task. Set the http Accept header to 'application/json'.
 
-#### Users Endpoints
+### Users Endpoints
 
 - **GET -** /api/users : Gets a paginated list of users
 - **POST -** /api/users : Creates a new user 
@@ -80,7 +80,7 @@ The application consist of endpoints and each carry out a specific task. Set the
     }
     ```
 
-#### Websites Endpoints
+### Websites Endpoints
 
 - **GET -** /api/websites : Gets a paginated list of websites
 
@@ -109,7 +109,7 @@ The application consist of endpoints and each carry out a specific task. Set the
 
 - **DELETE -** /api/websites/{website} : Soft deletes a website and its related posts.
 
-#### Posts Endpoints
+### Posts Endpoints
 
 - **GET -** /api/posts : Gets a paginated list of posts
 - **POST -** /api/posts : Creates a new post
@@ -141,7 +141,7 @@ The application consist of endpoints and each carry out a specific task. Set the
 - **DELETE -** /api/posts/{post} : Soft deletes a post.
 
 
-### HTTP Responses Structure
+## HTTP Responses Structure
 
 - **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
