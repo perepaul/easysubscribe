@@ -83,6 +83,7 @@ The application consist of endpoints and each carry out a specific task. Set the
 ### Websites Endpoints
 
 - **GET -** /api/websites : Gets a paginated list of websites
+- **POST -** /api/websites : Creates a new website
 
     ```
     body:{ 
@@ -92,8 +93,7 @@ The application consist of endpoints and each carry out a specific task. Set the
         url,
     }
     ```
-
-- **POST -** /api/websites : Creates a new website
+    
 - **GET -** /api/websites/{website} : Gets a single website
 - **PUT -** /api/websites/{website} : Updates a website
 
