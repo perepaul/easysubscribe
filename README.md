@@ -23,16 +23,34 @@ A newsletter subscription application where users can subscribe to a website to 
 
 The application consist of endpoints and each carry out a specific task. Set the http Accept header to 'application/json'.
 
-### User Endpoints
+#### Users Endpoints
 
 - **GET -** /api/users : Gets a paginated list of users
 - **POST -** /api/users : Creates a new user
 - **GET -** /api/users/{user} : Gets a single user
-- **PUT -** /api/users/{user} : Updates a single user
+- **PUT -** /api/users/{user} : Updates a user
 - **DELETE -** /api/users/{user} : Soft deletes a user and its related record.
+- **POST -** /api/users/{user}/subscribe : Subscribes a user to a website
+- **POST -** /api/users/{user}/unsubscribe : Unsubscribes a user from a website
+
+#### Websites Endpoints
+
+- **GET -** /api/websites : Gets a paginated list of websites
+- **POST -** /api/websites : Creates a new website
+- **GET -** /api/websites/{website} : Gets a single website
+- **PUT -** /api/websites/{website} : Updates a website
+- **DELETE -** /api/websites/{website} : Soft deletes a website and its related posts.
+
+#### Posts Endpoints
+
+- **GET -** /api/posts : Gets a paginated list of posts
+- **POST -** /api/posts : Creates a new post
+- **GET -** /api/posts/{post} : Gets a single post
+- **PUT -** /api/posts/{post} : Updates a post
+- **DELETE -** /api/posts/{post} : Soft deletes a post.
 
 
-### Premium Partners
+### HTTP Responses
 
 - **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
