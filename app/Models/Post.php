@@ -17,10 +17,6 @@ class Post extends Model
     ];
 
 
-    public function getRouteKey()
-    {
-        return 'slug';
-    }
 
     public function website()
     {
